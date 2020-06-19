@@ -10,29 +10,161 @@
     Blog
   </a> <a href="/portfolio" class="link" data-v-029fcba8>
     Portafolio
-  </a></div></header> <main class="v-content" style="padding-top:64px;padding-right:0;padding-bottom:0;padding-left:0"><div class="v-content__wrap"><div class="container"><main class="v-content pt-1" style="padding-top:64px;padding-right:0;padding-bottom:0;padding-left:0" data-v-bcd5a916><div class="v-content__wrap"><div class="pt-0 col col-12" data-v-bcd5a916><div class="v-responsive v-image" style="max-height:500px" data-v-bcd5a916><div class="v-image__image v-image__image--preload v-image__image--cover" style="background-image:linear-gradient(180deg,rgba(1,1,1,0) 0,rgba(23,26,30,.8) 90%,#171a1e 100%);background-position:center center"></div><div class="v-responsive__content"><div class="container max-size" data-v-bcd5a916><div class="row max-size align-end justify-start" data-v-bcd5a916><i aria-hidden="true" class="v-icon notranslate mdi mdi-calendar theme--dark" data-v-bcd5a916></i> <span class="mr-2" data-v-bcd5a916>2020/06/05</span> <i aria-hidden="true" class="v-icon notranslate mdi mdi-clock theme--dark" data-v-bcd5a916></i> <span data-v-bcd5a916>22:00</span> <div class="spacer" data-v-bcd5a916></div> <span data-v-bcd5a916>
-            Imagen en dominio público por Andy Holmes
-          </span></div></div></div></div></div> <div class="col col-12" data-v-bcd5a916><h1 class="content" style="font-size:4em" data-v-bcd5a916>
-      Mi primer post
-    </h1></div> <div class="col col-12" data-v-bcd5a916><div class="content" data-v-bcd5a916><p>Este post va a ser algo corto y hablaré del porqué de esta página, principalmente son 3 motivos:</p>
+  </a></div></header> <main class="v-content" style="padding-top:64px;padding-right:0;padding-bottom:0;padding-left:0"><div class="v-content__wrap"><div class="container"><main class="v-content pt-1" style="padding-top:64px;padding-right:0;padding-bottom:0;padding-left:0" data-v-bcd5a916><div class="v-content__wrap"><div class="pt-0 col col-12" data-v-bcd5a916><div class="v-responsive v-image" style="max-height:500px" data-v-bcd5a916><div class="v-image__image v-image__image--preload v-image__image--cover" style="background-image:linear-gradient(180deg,rgba(1,1,1,0) 0,rgba(23,26,30,.8) 90%,#171a1e 100%);background-position:center center"></div><div class="v-responsive__content"><div class="container max-size" data-v-bcd5a916><div class="row max-size align-end justify-start" data-v-bcd5a916><i aria-hidden="true" class="v-icon notranslate mdi mdi-calendar theme--dark" data-v-bcd5a916></i> <span class="mr-2" data-v-bcd5a916>2020/06/19</span> <i aria-hidden="true" class="v-icon notranslate mdi mdi-clock theme--dark" data-v-bcd5a916></i> <span data-v-bcd5a916>00:58</span> <div class="spacer" data-v-bcd5a916></div> <!----></div></div></div></div></div> <div class="col col-12" data-v-bcd5a916><h1 class="content" style="font-size:4em" data-v-bcd5a916>
+      Iniciando con Rust
+    </h1></div> <div class="col col-12" data-v-bcd5a916><div class="content" data-v-bcd5a916><p>Un lenguaje que ha estado tomando muchísima fuerza es <a href="https://rust-lang.org">Rust</a> y esto lleva varios años,
+basta con ver la developer survey de <a href="https://insights.stackoverflow.com/survey/2019#technology-_-most-loved-dreaded-and-wanted-languages">Stack Overflow</a> del 2019 para ver que es un lenguaje muy querido por los desarrolladores.</p>
+<p>Ahora bien, ¿qué tiene de especial este lenguaje de programación?, ¡pues mucho!, Rust está diseñado para ser un lenguaje de programación de sistemas
+(en la misma categoría que C, C++, D, Go), pero tiene algunas características muy interesantes:</p>
 <ul>
-<li>Compartir conocimiento</li>
-<li>Dar a conocer un poco sobre mí y sobre lo que he hecho</li>
-<li>Por gusto 😁</li>
+<li>Está diseñado para ser seguro</li>
+<li>Está diseñado para ser concurrente</li>
+<li>No tiene recolector de basura</li>
 </ul>
-<p>Respecto al primer punto, hay muchas cosas que creo que es más fácil explicar a través de un post que con palabras o por mensajes,
-pues hay más posibilidades de explayarse y de entrar en más detalles respecto a ciertas cosas.</p>
-<p>En el segundo punto, hay proyectos que he hecho y creo que merece exponerlos, sin embargo, por distintas cuestiones,
-estos no son todos (hay algunos que no puedo mostrar por distintas cuestiones).</p>
-<p>Y el tercer punto, ya tenía en mente hacer un blog desde hace varios meses, sin embargo, mi primer intento no me convenció y
-termine dejándolo, pero este ya se va a quedar 😎</p>
-<p>Espero que el contenido de este sitio sea de su agrado y, sobre todo, si pueden retroalimentar el contenido, ¡se los agradeceré!</p>
-<pre class="language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive property">include</span> <span class="token string property">&lt;iostream></span></span>
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    std<span class="token operator">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Let's begin!"</span><span class="token punctuation">;</span>
+<p>Y, desde mi punto de vista, es un lenguaje que ha venido para quedarse y creo que la etiqueta de "moderno" le queda muy bien :)</p>
+<h1>Contenido</h1>
+<ol>
+<li><a href="#history">Breve historia del lenguaje</a> 📖</li>
+<li><a href="#install">Instalando Rust</a> 💽</li>
+<li><a href="#hello-world">¡Hola mundo!</a> 🌎</li>
+<li><a href="#thoughts">Mis opiniones</a> 🤔</li>
+</ol>
+<br>
+<h1 id="history">Breve historia del lenguaje</h1>
+<p>Rust inicio como un proyecto personal de Graydon Hoare y se mantuvo de esta forma durante tres años, no fue sino hasta 2009 que Mozilla se iteresó en el proyecto
+y se metió al desarrollo de este proyecto.</p>
+<p>En 2010 Mozilla dio a conocer este proyecto al público y este mismo año se empezó a implementar el compilador de Rust en Rust, anteriormente estaba escrito en OCaml y
+fue hasta 2011 que por fin <code>rustc</code> pudo compilarse a si mismo :)</p>
+<p>La primera versión alfa de Rust salió en 2012 y la primera versión estable salió hasta 2015 🎉</p>
+<p>La versión más nueva a día de hoy es la 1.44.0</p>
+<br>
+<h1 id="install">Instalando Rust</h1>
+<p>El proceso de instalación de Rust es muy sencillo, basta con descargar <a href="https://www.rust-lang.org/tools/install">rustup</a> de la página oficial,
+en el caso de Windows (que es el sistema operativo que utilizo principalmente), abrirá una ventana y tendrá el siguiente contenido:</p>
+<pre class="language-cmd"><code class="language-cmd">Current installation options:
+
+
+   default host triple: x86_64-pc-windows-msvc
+     default toolchain: stable
+               profile: default
+  modify PATH variable: yes
+
+1) Proceed with installation (default)
+2) Customize installation
+3) Cancel installation
+</code></pre>
+<p>Podemos personalizar varias cosas, una de las principales es el host triple, el host triple sirve para indicar las siguientes cosas:</p>
+<ul>
+<li>Arquitectura 🏛</li>
+<li>Sistema operativo 💿</li>
+<li>Otras cuestiones, como utilizar msvc o gnu en el caso de Windows o utilizar glibc o musl en Linux 🔧
+Y para instalarlo basta con escribir <code>1</code> y presionar <code>ENTER</code></li>
+</ul>
+<br>
+<p>Y si queremos actualizar Rust, el proceso es muy sencillo, pues basta con ejecutar el siguiente comando: 👉 <code>rustup update</code></p>
+<br>
+<h1 id="hello-world">¡Hola mundo!</h1>
+<p>Escribir un hola mundo en Rust es muy sencillo, pues contamos con la herramienta <em>cargo</em>, cargo es el build system y gestor de paquetes de Rust,
+con el podemos gestionar dependencias y compilar nuestro código.</p>
+<p>Para crear un proyecto con cargo, basta con ejecutar el siguiente comando:</p>
+<pre class="language-powershell"><code class="language-powershell">cargo new <span class="token namespace">[nombre del proyecto]</span>
+</code></pre>
+<p>Esto creará una carpeta con el nombre del proyecto, vayamos creando uno llamado "hola_mundo":</p>
+<pre class="language-powershell"><code class="language-powershell"><span class="token function">PS</span> C:\rust> cargo new hello_world
+Created binary <span class="token punctuation">(</span>application<span class="token punctuation">)</span> `hola_mundo` package
+<span class="token function">PS</span> C:\rust> cd hello_world
+<span class="token function">PS</span> C:\rust\hello_world>
+</code></pre>
+<p>Cargo habrá creado los siguientes archivos:</p>
+<ul>
+<li>.gitignore</li>
+<li>Cargo.toml 👈 aquí es donde van las dependencias y algunos datos del proyecto</li>
+<li>src/main.rs 👈 nuestro código</li>
+</ul>
+<p>Analicemos el archivo <code>Cargo.toml</code> y <code>main.rs</code></p>
+<p>Cargo.toml</p>
+<pre class="language-toml"><code class="language-toml"><span class="token punctuation">[</span><span class="token table class-name">package</span><span class="token punctuation">]</span>
+<span class="token key property">name</span> <span class="token punctuation">=</span> <span class="token string">"hola_mundo"</span>
+<span class="token key property">version</span> <span class="token punctuation">=</span> <span class="token string">"0.1.0"</span>
+<span class="token key property">authors</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span><span class="token string">"Alan Ramírez Herrera &lt;alan5142@hotmail.com>"</span><span class="token punctuation">]</span>
+<span class="token key property">edition</span> <span class="token punctuation">=</span> <span class="token string">"2018"</span>
+
+<span class="token comment"># See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">dependencies</span><span class="token punctuation">]</span>
+<span class="token comment"># Aquí van nuestras dependencias :)</span>
+</code></pre>
+<p>Es importante mencionar que estas <em>NO</em> son todas las opciones, Rust cuenta con documentación <a href="https://doc.rust-lang.org/cargo/reference/manifest.html">para esto</a></p>
+<ul>
+<li><code>[package]</code> indica que inicia un paquete (proyecto)
+<ul>
+<li><code>name</code> es el nombre del paquete</li>
+<li><code>verison</code> es la versión del paquete</li>
+<li><code>authors</code> es una lista de las personas que son consideradas autores del proyecto</li>
+<li><code>edition</code> esta es importante, indica la edición de Rust que se utilizará, si no la especificamos por defecto utilizará 2015 (la primera versión estable)</li>
+</ul>
+</li>
+<li><code>[dependencies]</code> contiene todas las dependencias que queramos utilizar en nuestro proyecto, podemos especificar de donde descargarlo (por ejemplo, un repositorio en GitHub) o utilizar <a href="https://crates.io/">crates.io</a></li>
+</ul>
+<p>Para agregar dependencias basta con listarla debajo de <code>[dependencies]</code>, por ejemplo, si queremos instalar gfx (una API gráfica), basta con hacer esto:</p>
+<pre class="language-toml"><code class="language-toml"><span class="token punctuation">[</span><span class="token table class-name">dependencies</span><span class="token punctuation">]</span>
+<span class="token key property">gfx</span> <span class="token punctuation">=</span> <span class="token string">"0.18.2"</span> <span class="token comment"># Esta es la versión</span>
+</code></pre>
+<p>¡Eso es todo!, compilamos nuestro programa y <code>cargo</code> buscará las nuevas dependencias y las instalará, ¿no es genial?</p>
+<p>Ahora si, ¿y cómo se ve un hola mundo?</p>
+<pre class="language-rust"><code class="language-rust"><span class="token keyword">fn</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">println!</span><span class="token punctuation">(</span><span class="token string">"Hello world"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-</div></div> <div class="col col-12" data-v-bcd5a916><!----></div></div></main></div></div></main> <footer class="v-footer v-sheet v-sheet--tile theme--dark v-footer--fixed" style="left:0;right:0;bottom:0"><span>© 2020 - Alan Ramírez Herrera </span></footer></div></div></div></div><script>window.__NUXT__={layout:"default",data:[{attributes:{title:"Mi primer post",year:2020,month:6,day:5,hour:"22:00",excerpt:"Este post va a ser algo corto y hablaré del porqué de esta página, principalmente son 3 motivos...",picture:"/images/blog/first_post/header.png",picture_attribution:"Andy Holmes"},html:'<p>Este post va a ser algo corto y hablaré del porqué de esta página, principalmente son 3 motivos:</p>\n<ul>\n<li>Compartir conocimiento</li>\n<li>Dar a conocer un poco sobre mí y sobre lo que he hecho</li>\n<li>Por gusto 😁</li>\n</ul>\n<p>Respecto al primer punto, hay muchas cosas que creo que es más fácil explicar a través de un post que con palabras o por mensajes,\npues hay más posibilidades de explayarse y de entrar en más detalles respecto a ciertas cosas.</p>\n<p>En el segundo punto, hay proyectos que he hecho y creo que merece exponerlos, sin embargo, por distintas cuestiones,\nestos no son todos (hay algunos que no puedo mostrar por distintas cuestiones).</p>\n<p>Y el tercer punto, ya tenía en mente hacer un blog desde hace varios meses, sin embargo, mi primer intento no me convenció y\ntermine dejándolo, pero este ya se va a quedar 😎</p>\n<p>Espero que el contenido de este sitio sea de su agrado y, sobre todo, si pueden retroalimentar el contenido, ¡se los agradeceré!</p>\n<pre class="language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive property">include</span> <span class="token string property">&lt;iostream></span></span>\n<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>\n<span class="token punctuation">{</span>\n    std<span class="token operator">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Let\'s begin!"</span><span class="token punctuation">;</span>\n<span class="token punctuation">}</span>\n</code></pre>\n',date:"2020/06/05"}],fetch:[],error:null,serverRendered:!0,routePath:"/blog/2020-06-05-primer_post"}</script><script src="/_nuxt/51d020a6a9a6853298de.js" defer></script><script src="/_nuxt/7a8df7ad9aeed73a5675.js" defer></script><script src="/_nuxt/8f12575f9c3c1075485d.js" defer></script><script src="/_nuxt/2c1a27bda78eb5732da3.js" defer></script><script src="/_nuxt/02dfa7bec80cc7b0de77.js" defer></script>
+<p>Si queremos compilarlo utilizamos <code>cargo build</code> en la raíz del proyecto y si queremos ejecutarlo, utilizamos <code>cargo run</code>;
+al compilarlo se crea una carpeta llamada <em>target</em>, ahí se encuentran los resultados de haber compilado nuestro programa</p>
+<p>De aquí podemos observar varías cosas:</p>
+<ul>
+<li>Las funciones inician con la palabra reservada <code>fn</code></li>
+<li>Al igual que en C++, la función principal se llama <code>main</code></li>
+<li>Se utilizan llaves para delimitar bloques</li>
+<li>Para mostrar en pantalla, utilizamos <code>println!</code></li>
+</ul>
+<p>Rust tiene algunas otras diferencias comparado con otros lenguajes, pero son fáciles de entender, veamos otro ejemplo.</p>
+<pre class="language-rust"><code class="language-rust"><span class="token keyword">fn</span> <span class="token function">sentido_de_la_vida</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">-></span> i32 <span class="token punctuation">{</span>
+    <span class="token number">42</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">fn</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token function">sentido_de_la_vida</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> num <span class="token operator">!=</span> <span class="token number">42</span> <span class="token punctuation">{</span>
+        <span class="token function">println!</span><span class="token punctuation">(</span><span class="token string">"Oops, hay algo mal :("</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token function">println!</span><span class="token punctuation">(</span><span class="token string">"Todo esta perfecto"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Efectuamos <code>cargo run</code> y mostrará lo siguiente (puedes verlo <a href="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=206bf3a15a779ef8b8596d587a48179c">aquí</a>👈)</p>
+<pre class="language-powershell"><code class="language-powershell">Todo esta perfecto
+</code></pre>
+<h1 id="thoughts">Mis opiniones</h1>
+<h2>Lo bueno</h2>
+<p>¡Rust es un lenguaje mágnifico!, y no solo eso, viniendo de C++ la adopción ha sido muy sencilla y creo que esto es un punto bastante fuerte del lenguaje,
+quizá llega a ser un poco molesto la cantidad de veces que <code>rustc</code> no te permite compilar pero lo hace con mucha razón: el compilador de rust
+es uno de sus puntos más fuertes, los mensajes son muy claros, te indica dónde puede estar el error y posiblemente como solucionarlo y muchas
+veces te previene de cosas que probablemente no hayan sucedido por tu mente, simplemente es una maravilla 😎.</p>
+<p>Además, hay algunas cosas que me gustaría que C++ tuviera:</p>
+<ul>
+<li>Que los compiladores sean más amigables con los errores (especialmente con los errores del <em>linker</em> y con las templates)</li>
+<li>Un géstor de paquetes (aunque lentamente la situación está mejorando con herramientas como <a href="https://github.com/Microsoft/vcpkg">vcpkg</a> y <a href="https://conan.io/">conan</a>)</li>
+<li>Los traits :( (aunque los <em>Concepts</em> de C++20 pueden ayudar en esto)</li>
+<li>¡Los tiempos de compilación!, cuando he utilizado <em>Boost</em>, específicamente Asio y Beast, los tiempos de compilación son exageradamente grandes (principalmente por culpa de las templates)</li>
+</ul>
+<h2>Lo malo</h2>
+<p>Creo que es un lenguaje aún muy nuevo, falta que más proyectos lo utilicen de manera seria, pero estoy seguro de que esa situación cambiará en un futuro para bien</p>
+<h2>Sin clasificar</h2>
+<p>Creo que el lenguaje llego para quedarse, sin embargo, no creo que sustituya a C ni sea un <em>C++ killer</em>, creo que cada lenguaje tiene su espacio.</p>
+<p>Y finalmente, creo que todos deberían probar Rust, pues creo que es un lenguaje moderno que demuestra que no se necesita un recolector de basura para
+ser seguro y, creo que ha hecho muchísimos aciertos en cuanto al diseño de este.</p>
+<br>
+<br>
+Finalmente, me gustaría saber, ¿ustedes ya han probado Rust?, ¿qué opinan?, deja un comentario o envíame un mensaje.
+<p>¡Hasta la próxima!</p>
+</div></div> <div class="col col-12" data-v-bcd5a916><!----></div></div></main></div></div></main> <footer class="v-footer v-sheet v-sheet--tile theme--dark v-footer--fixed" style="left:0;right:0;bottom:0"><span>© 2020 - Alan Ramírez Herrera </span></footer></div></div></div></div><script>window.__NUXT__={layout:"default",data:[{attributes:{title:"Iniciando con Rust",year:2020,month:6,day:19,hour:"00:58",excerpt:"Rust es un lenguaje de programación que ha estado creciendo en popularidad y con buenas razones, he decidido probarlo y te comparto un breve resúmen de este lenguaje y algunas de mis opiniones respecto a este lenguaje",picture:"/images/blog/rust_getting_started/Rust.png"},html:'<p>Un lenguaje que ha estado tomando muchísima fuerza es <a href="https://rust-lang.org">Rust</a> y esto lleva varios años,\nbasta con ver la developer survey de <a href="https://insights.stackoverflow.com/survey/2019#technology-_-most-loved-dreaded-and-wanted-languages">Stack Overflow</a> del 2019 para ver que es un lenguaje muy querido por los desarrolladores.</p>\n<p>Ahora bien, ¿qué tiene de especial este lenguaje de programación?, ¡pues mucho!, Rust está diseñado para ser un lenguaje de programación de sistemas\n(en la misma categoría que C, C++, D, Go), pero tiene algunas características muy interesantes:</p>\n<ul>\n<li>Está diseñado para ser seguro</li>\n<li>Está diseñado para ser concurrente</li>\n<li>No tiene recolector de basura</li>\n</ul>\n<p>Y, desde mi punto de vista, es un lenguaje que ha venido para quedarse y creo que la etiqueta de &quot;moderno&quot; le queda muy bien :)</p>\n<h1>Contenido</h1>\n<ol>\n<li><a href="#history">Breve historia del lenguaje</a> 📖</li>\n<li><a href="#install">Instalando Rust</a> 💽</li>\n<li><a href="#hello-world">¡Hola mundo!</a> 🌎</li>\n<li><a href="#thoughts">Mis opiniones</a> 🤔</li>\n</ol>\n<br>\n<h1 id="history">Breve historia del lenguaje</h1>\n<p>Rust inicio como un proyecto personal de Graydon Hoare y se mantuvo de esta forma durante tres años, no fue sino hasta 2009 que Mozilla se iteresó en el proyecto\ny se metió al desarrollo de este proyecto.</p>\n<p>En 2010 Mozilla dio a conocer este proyecto al público y este mismo año se empezó a implementar el compilador de Rust en Rust, anteriormente estaba escrito en OCaml y\nfue hasta 2011 que por fin <code>rustc</code> pudo compilarse a si mismo :)</p>\n<p>La primera versión alfa de Rust salió en 2012 y la primera versión estable salió hasta 2015 🎉</p>\n<p>La versión más nueva a día de hoy es la 1.44.0</p>\n<br>\n<h1 id="install">Instalando Rust</h1>\n<p>El proceso de instalación de Rust es muy sencillo, basta con descargar <a href="https://www.rust-lang.org/tools/install">rustup</a> de la página oficial,\nen el caso de Windows (que es el sistema operativo que utilizo principalmente), abrirá una ventana y tendrá el siguiente contenido:</p>\n<pre class="language-cmd"><code class="language-cmd">Current installation options:\n\n\n   default host triple: x86_64-pc-windows-msvc\n     default toolchain: stable\n               profile: default\n  modify PATH variable: yes\n\n1) Proceed with installation (default)\n2) Customize installation\n3) Cancel installation\n</code></pre>\n<p>Podemos personalizar varias cosas, una de las principales es el host triple, el host triple sirve para indicar las siguientes cosas:</p>\n<ul>\n<li>Arquitectura 🏛</li>\n<li>Sistema operativo 💿</li>\n<li>Otras cuestiones, como utilizar msvc o gnu en el caso de Windows o utilizar glibc o musl en Linux 🔧\nY para instalarlo basta con escribir <code>1</code> y presionar <code>ENTER</code></li>\n</ul>\n<br>\n<p>Y si queremos actualizar Rust, el proceso es muy sencillo, pues basta con ejecutar el siguiente comando: 👉 <code>rustup update</code></p>\n<br>\n<h1 id="hello-world">¡Hola mundo!</h1>\n<p>Escribir un hola mundo en Rust es muy sencillo, pues contamos con la herramienta <em>cargo</em>, cargo es el build system y gestor de paquetes de Rust,\ncon el podemos gestionar dependencias y compilar nuestro código.</p>\n<p>Para crear un proyecto con cargo, basta con ejecutar el siguiente comando:</p>\n<pre class="language-powershell"><code class="language-powershell">cargo new <span class="token namespace">[nombre del proyecto]</span>\n</code></pre>\n<p>Esto creará una carpeta con el nombre del proyecto, vayamos creando uno llamado &quot;hola_mundo&quot;:</p>\n<pre class="language-powershell"><code class="language-powershell"><span class="token function">PS</span> C:\\rust> cargo new hello_world\nCreated binary <span class="token punctuation">(</span>application<span class="token punctuation">)</span> `hola_mundo` package\n<span class="token function">PS</span> C:\\rust> cd hello_world\n<span class="token function">PS</span> C:\\rust\\hello_world>\n</code></pre>\n<p>Cargo habrá creado los siguientes archivos:</p>\n<ul>\n<li>.gitignore</li>\n<li>Cargo.toml 👈 aquí es donde van las dependencias y algunos datos del proyecto</li>\n<li>src/main.rs 👈 nuestro código</li>\n</ul>\n<p>Analicemos el archivo <code>Cargo.toml</code> y <code>main.rs</code></p>\n<p>Cargo.toml</p>\n<pre class="language-toml"><code class="language-toml"><span class="token punctuation">[</span><span class="token table class-name">package</span><span class="token punctuation">]</span>\n<span class="token key property">name</span> <span class="token punctuation">=</span> <span class="token string">"hola_mundo"</span>\n<span class="token key property">version</span> <span class="token punctuation">=</span> <span class="token string">"0.1.0"</span>\n<span class="token key property">authors</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span><span class="token string">"Alan Ramírez Herrera &lt;alan5142@hotmail.com>"</span><span class="token punctuation">]</span>\n<span class="token key property">edition</span> <span class="token punctuation">=</span> <span class="token string">"2018"</span>\n\n<span class="token comment"># See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html</span>\n\n<span class="token punctuation">[</span><span class="token table class-name">dependencies</span><span class="token punctuation">]</span>\n<span class="token comment"># Aquí van nuestras dependencias :)</span>\n</code></pre>\n<p>Es importante mencionar que estas <em>NO</em> son todas las opciones, Rust cuenta con documentación <a href="https://doc.rust-lang.org/cargo/reference/manifest.html">para esto</a></p>\n<ul>\n<li><code>[package]</code> indica que inicia un paquete (proyecto)\n<ul>\n<li><code>name</code> es el nombre del paquete</li>\n<li><code>verison</code> es la versión del paquete</li>\n<li><code>authors</code> es una lista de las personas que son consideradas autores del proyecto</li>\n<li><code>edition</code> esta es importante, indica la edición de Rust que se utilizará, si no la especificamos por defecto utilizará 2015 (la primera versión estable)</li>\n</ul>\n</li>\n<li><code>[dependencies]</code> contiene todas las dependencias que queramos utilizar en nuestro proyecto, podemos especificar de donde descargarlo (por ejemplo, un repositorio en GitHub) o utilizar <a href="https://crates.io/">crates.io</a></li>\n</ul>\n<p>Para agregar dependencias basta con listarla debajo de <code>[dependencies]</code>, por ejemplo, si queremos instalar gfx (una API gráfica), basta con hacer esto:</p>\n<pre class="language-toml"><code class="language-toml"><span class="token punctuation">[</span><span class="token table class-name">dependencies</span><span class="token punctuation">]</span>\n<span class="token key property">gfx</span> <span class="token punctuation">=</span> <span class="token string">"0.18.2"</span> <span class="token comment"># Esta es la versión</span>\n</code></pre>\n<p>¡Eso es todo!, compilamos nuestro programa y <code>cargo</code> buscará las nuevas dependencias y las instalará, ¿no es genial?</p>\n<p>Ahora si, ¿y cómo se ve un hola mundo?</p>\n<pre class="language-rust"><code class="language-rust"><span class="token keyword">fn</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>\n    <span class="token function">println!</span><span class="token punctuation">(</span><span class="token string">"Hello world"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>\n<span class="token punctuation">}</span>\n</code></pre>\n<p>Si queremos compilarlo utilizamos <code>cargo build</code> en la raíz del proyecto y si queremos ejecutarlo, utilizamos <code>cargo run</code>;\nal compilarlo se crea una carpeta llamada <em>target</em>, ahí se encuentran los resultados de haber compilado nuestro programa</p>\n<p>De aquí podemos observar varías cosas:</p>\n<ul>\n<li>Las funciones inician con la palabra reservada <code>fn</code></li>\n<li>Al igual que en C++, la función principal se llama <code>main</code></li>\n<li>Se utilizan llaves para delimitar bloques</li>\n<li>Para mostrar en pantalla, utilizamos <code>println!</code></li>\n</ul>\n<p>Rust tiene algunas otras diferencias comparado con otros lenguajes, pero son fáciles de entender, veamos otro ejemplo.</p>\n<pre class="language-rust"><code class="language-rust"><span class="token keyword">fn</span> <span class="token function">sentido_de_la_vida</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">-></span> i32 <span class="token punctuation">{</span>\n    <span class="token number">42</span>\n<span class="token punctuation">}</span>\n\n<span class="token keyword">fn</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>\n    <span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token function">sentido_de_la_vida</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>\n    <span class="token keyword">if</span> num <span class="token operator">!=</span> <span class="token number">42</span> <span class="token punctuation">{</span>\n        <span class="token function">println!</span><span class="token punctuation">(</span><span class="token string">"Oops, hay algo mal :("</span><span class="token punctuation">)</span><span class="token punctuation">;</span>\n    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>\n        <span class="token function">println!</span><span class="token punctuation">(</span><span class="token string">"Todo esta perfecto"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>\n    <span class="token punctuation">}</span>\n<span class="token punctuation">}</span>\n</code></pre>\n<p>Efectuamos <code>cargo run</code> y mostrará lo siguiente (puedes verlo <a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=206bf3a15a779ef8b8596d587a48179c">aquí</a>👈)</p>\n<pre class="language-powershell"><code class="language-powershell">Todo esta perfecto\n</code></pre>\n<h1 id="thoughts">Mis opiniones</h1>\n<h2>Lo bueno</h2>\n<p>¡Rust es un lenguaje mágnifico!, y no solo eso, viniendo de C++ la adopción ha sido muy sencilla y creo que esto es un punto bastante fuerte del lenguaje,\nquizá llega a ser un poco molesto la cantidad de veces que <code>rustc</code> no te permite compilar pero lo hace con mucha razón: el compilador de rust\nes uno de sus puntos más fuertes, los mensajes son muy claros, te indica dónde puede estar el error y posiblemente como solucionarlo y muchas\nveces te previene de cosas que probablemente no hayan sucedido por tu mente, simplemente es una maravilla 😎.</p>\n<p>Además, hay algunas cosas que me gustaría que C++ tuviera:</p>\n<ul>\n<li>Que los compiladores sean más amigables con los errores (especialmente con los errores del <em>linker</em> y con las templates)</li>\n<li>Un géstor de paquetes (aunque lentamente la situación está mejorando con herramientas como <a href="https://github.com/Microsoft/vcpkg">vcpkg</a> y <a href="https://conan.io/">conan</a>)</li>\n<li>Los traits :( (aunque los <em>Concepts</em> de C++20 pueden ayudar en esto)</li>\n<li>¡Los tiempos de compilación!, cuando he utilizado <em>Boost</em>, específicamente Asio y Beast, los tiempos de compilación son exageradamente grandes (principalmente por culpa de las templates)</li>\n</ul>\n<h2>Lo malo</h2>\n<p>Creo que es un lenguaje aún muy nuevo, falta que más proyectos lo utilicen de manera seria, pero estoy seguro de que esa situación cambiará en un futuro para bien</p>\n<h2>Sin clasificar</h2>\n<p>Creo que el lenguaje llego para quedarse, sin embargo, no creo que sustituya a C ni sea un <em>C++ killer</em>, creo que cada lenguaje tiene su espacio.</p>\n<p>Y finalmente, creo que todos deberían probar Rust, pues creo que es un lenguaje moderno que demuestra que no se necesita un recolector de basura para\nser seguro y, creo que ha hecho muchísimos aciertos en cuanto al diseño de este.</p>\n<br>\n<br>\nFinalmente, me gustaría saber, ¿ustedes ya han probado Rust?, ¿qué opinan?, deja un comentario o envíame un mensaje.\n<p>¡Hasta la próxima!</p>\n',date:"2020/06/19"}],fetch:[],error:null,serverRendered:!0,routePath:"/blog/2020-06-19-rust_getting_started"}</script><script src="/_nuxt/51d020a6a9a6853298de.js" defer></script><script src="/_nuxt/7a8df7ad9aeed73a5675.js" defer></script><script src="/_nuxt/8f12575f9c3c1075485d.js" defer></script><script src="/_nuxt/2c1a27bda78eb5732da3.js" defer></script><script src="/_nuxt/02dfa7bec80cc7b0de77.js" defer></script>
   </body>
 </html>
