@@ -1,1 +1,11 @@
-{"name":"Alan","short_name":"Alan","description":"My blog","icons":[],"start_url":"/?standalone=true","display":"standalone","background_color":"#ffffff","theme_color":"#fff","lang":"en"}
+{
+  "name": "Alan",
+  "short_name": "Alan",
+  "description": "My blog",
+  "icons": [],
+  "start_url": "/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#fff",
+  "lang": "en"
+}
